@@ -1,0 +1,19 @@
+<head>
+<title>Robot Control</title>
+</head>
+<script>
+function ex(cmd) {
+var req = new XMLHttpRequest();  
+var page = 'http://192.168.1.4:12345/'.concat(cmd);
+req.open('GET', page, false); 
+req.send(null);  
+}
+</script>
+<body>
+<input type="button" value="forward" onclick="ex('forward');" />
+<input type="button" value="backward" onclick="ex('backward');" />
+<input type="button" value="left" onclick="ex('left');" />
+<input type="button" value="right" onclick="ex('right');" />
+<input type="button" value="stop" onclick="ex('stop');" />
+</body>
+</html>
