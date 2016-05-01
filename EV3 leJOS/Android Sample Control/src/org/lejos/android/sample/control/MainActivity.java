@@ -61,7 +61,7 @@ public class MainActivity extends Activity implements OnClickListener {
 			new Control().execute("backward");
 		else if (v.getId() == R.id.connect) {
 			if (ev3 == null) {
-				new Control().execute("connect", "192.168.1.4");
+				new Control().execute("connect", "192.168.0.101");
 				connect.setText("Disconnect");
 			} else {
 				new Control().execute("disconnect");
